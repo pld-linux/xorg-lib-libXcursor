@@ -17,6 +17,9 @@ BuildRequires:	xorg-lib-libXrender-devel
 BuildRequires:	libtool
 BuildRequires:	pkg-config
 BuildRequires:	xorg-util-util-macros
+Obsoletes:	XFree86-xcursor
+Obsoletes:	libXcursor
+Obsoletes:	xcursor
 BuildRoot:	%{tmpdir}/libXcursor-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -36,6 +39,9 @@ Group:		X11/Development/Libraries
 Requires:	xorg-lib-libXcursor = %{version}-%{release}
 Requires:	xorg-lib-libXfixes-devel
 Requires:	xorg-lib-libXrender-devel
+Obsoletes:	XFree86-xcursor-devel
+Obsoletes:	libXcursor-devel
+Obsoletes:	xcursor-devel
 
 %description devel
 X Cursor - client-side cursor loading library.
@@ -55,6 +61,9 @@ Summary:	Static libXcursor libraries
 Summary(pl):	Biblioteki statyczne libXcursor
 Group:		Development/Libraries
 Requires:	xorg-lib-libXcursor-devel = %{version}-%{release}
+Obsoletes:	XFree86-xcursor-static
+Obsoletes:	libXcursor-static
+Obsoletes:	xcursor-static
 
 %description static
 X Cursor - client-side cursor loading library.
