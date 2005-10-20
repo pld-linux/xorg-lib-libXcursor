@@ -1,19 +1,19 @@
 Summary:	X Cursor library
 Summary(pl):	Biblioteka X Cursor
 Name:		xorg-lib-libXcursor
-Version:	1.1.3
-Release:	0.03
+Version:	1.1.4
+Release:	0.1
 License:	MIT
 Group:		X11/Libraries
-Source0:	http://xorg.freedesktop.org/X11R7.0-RC0/lib/libXcursor-%{version}.tar.bz2
-# Source0-md5:	c794209ce7dcbbdca5d6cb9e5c24a5dd
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/lib/libXcursor-%{version}.tar.bz2
+# Source0-md5:	03f7acb72e62939a5e5289b0001d39e8
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 0.19
 BuildRequires:	xorg-lib-libXfixes-devel
-BuildRequires:	xorg-lib-libXrender-devel
+BuildRequires:	xorg-lib-libXrender-devel >= 0.8.2
 BuildRequires:	xorg-util-util-macros
 Obsoletes:	XFree86-xcursor
 Obsoletes:	libXcursor
@@ -32,7 +32,7 @@ Summary(pl):	Pliki nag³ówkowe do biblioteki libXcursor
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-lib-libXfixes-devel
-Requires:	xorg-lib-libXrender-devel
+Requires:	xorg-lib-libXrender-devel >= 0.8.2
 Obsoletes:	XFree86-xcursor-devel
 Obsoletes:	libXcursor-devel
 Obsoletes:	xcursor-devel
@@ -95,7 +95,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog
+%doc AUTHORS COPYING ChangeLog
 %attr(755,root,root) %{_libdir}/libXcursor.so.*.*.*
 
 %files devel
