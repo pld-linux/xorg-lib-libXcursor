@@ -27,7 +27,7 @@ X Cursor - client-side cursor loading library.
 X Cursor - kliencka biblioteka do wczytywania kursorów.
 
 %package devel
-Summary:	Header files libXcursor development
+Summary:	Header files for libXcursor library
 Summary(pl):	Pliki nag³ówkowe do biblioteki libXcursor
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
@@ -41,7 +41,7 @@ Obsoletes:	xcursor-devel
 X Cursor - client-side cursor loading library.
 
 This package contains the header files needed to develop programs that
-use these libXcursor.
+use libXcursor.
 
 %description devel -l pl
 X Cursor - kliencka biblioteka do wczytywania kursorów.
