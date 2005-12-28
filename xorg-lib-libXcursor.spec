@@ -5,8 +5,8 @@ Version:	1.1.5.2
 Release:	0.1
 License:	MIT
 Group:		X11/Libraries
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC4/lib/libXcursor-%{version}.tar.bz2
-# Source0-md5:	f406ce87447086a1f85f9cffb2dfbd34
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/lib/libXcursor-%{version}.tar.bz2
+# Source0-md5:	df4c922947d0d74791f9d492ee9e9865
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
