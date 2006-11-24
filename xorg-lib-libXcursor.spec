@@ -2,7 +2,7 @@ Summary:	X Cursor library
 Summary(pl):	Biblioteka X Cursor
 Name:		xorg-lib-libXcursor
 Version:	1.1.8
-Release:	2
+Release:	3
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXcursor-%{version}.tar.bz2
