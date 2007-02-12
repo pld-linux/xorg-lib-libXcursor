@@ -1,5 +1,5 @@
 Summary:	X Cursor library
-Summary(pl):	Biblioteka X Cursor
+Summary(pl.UTF-8):   Biblioteka X Cursor
 Name:		xorg-lib-libXcursor
 Version:	1.1.8
 Release:	3
@@ -24,12 +24,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 X Cursor - client-side cursor loading library.
 
-%description -l pl
-X Cursor - kliencka biblioteka do wczytywania kursorów.
+%description -l pl.UTF-8
+X Cursor - kliencka biblioteka do wczytywania kursorÃ³w.
 
 %package devel
 Summary:	Header files for libXcursor library
-Summary(pl):	Pliki nag³ówkowe do biblioteki libXcursor
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe do biblioteki libXcursor
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-lib-libXfixes-devel
@@ -44,15 +44,15 @@ X Cursor - client-side cursor loading library.
 This package contains the header files needed to develop programs that
 use libXcursor.
 
-%description devel -l pl
-X Cursor - kliencka biblioteka do wczytywania kursorów.
+%description devel -l pl.UTF-8
+X Cursor - kliencka biblioteka do wczytywania kursorÃ³w.
 
-Pakiet zawiera pliki nag³ówkowe niezbêdne do kompilowania programów
-u¿ywaj±cych biblioteki libXcursor.
+Pakiet zawiera pliki nagÅ‚Ã³wkowe niezbÄ™dne do kompilowania programÃ³w
+uÅ¼ywajÄ…cych biblioteki libXcursor.
 
 %package static
 Summary:	Static libXcursor library
-Summary(pl):	Biblioteka statyczna libXcursor
+Summary(pl.UTF-8):   Biblioteka statyczna libXcursor
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 Obsoletes:	XFree86-xcursor-static
@@ -64,10 +64,10 @@ X Cursor - client-side cursor loading library.
 
 This package contains the static libXcursor library.
 
-%description static -l pl
-X Cursor - kliencka biblioteka do wczytywania kursorów.
+%description static -l pl.UTF-8
+X Cursor - kliencka biblioteka do wczytywania kursorÃ³w.
 
-Pakiet zawiera statyczn± bibliotekê libXcursor.
+Pakiet zawiera statycznÄ… bibliotekÄ™ libXcursor.
 
 %prep
 %setup -q -n libXcursor-%{version}
