@@ -1,5 +1,5 @@
 Summary:	X Cursor library
-Summary(pl.UTF-8):   Biblioteka X Cursor
+Summary(pl.UTF-8):	Biblioteka X Cursor
 Name:		xorg-lib-libXcursor
 Version:	1.1.8
 Release:	3
@@ -29,7 +29,7 @@ X Cursor - kliencka biblioteka do wczytywania kursorów.
 
 %package devel
 Summary:	Header files for libXcursor library
-Summary(pl.UTF-8):   Pliki nagłówkowe do biblioteki libXcursor
+Summary(pl.UTF-8):	Pliki nagłówkowe do biblioteki libXcursor
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-lib-libXfixes-devel
@@ -52,7 +52,7 @@ używających biblioteki libXcursor.
 
 %package static
 Summary:	Static libXcursor library
-Summary(pl.UTF-8):   Biblioteka statyczna libXcursor
+Summary(pl.UTF-8):	Biblioteka statyczna libXcursor
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 Obsoletes:	XFree86-xcursor-static
