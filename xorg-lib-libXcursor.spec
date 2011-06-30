@@ -1,12 +1,12 @@
 Summary:	libXcursor - X Window System Cursor management library
 Summary(pl.UTF-8):	Biblioteka libXcursor do zarządzania kursorami w systemie X Window
 Name:		xorg-lib-libXcursor
-Version:	1.1.11
+Version:	1.1.12
 Release:	1
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXcursor-%{version}.tar.bz2
-# Source0-md5:	866ed46f7e0d85b8c0003cebbb78a4af
+# Source0-md5:	a93b5a6f5b05976d2c0d3f8a07f6ac6a
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
