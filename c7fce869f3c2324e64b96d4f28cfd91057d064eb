@@ -1,0 +1,3 @@
+- unifications, cleanups, longer descs
+- home patch is obsolete (1 is always added to homelen)
+- added libXrender and ac versions to deps
