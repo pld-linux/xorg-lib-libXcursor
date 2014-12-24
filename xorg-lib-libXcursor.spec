@@ -110,7 +110,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_includedir}/X11/Xcursor
 %{_includedir}/X11/Xcursor/Xcursor.h
 %{_pkgconfigdir}/xcursor.pc
-%{_mandir}/man3/Xcursor*.3x*
+%{_mandir}/man3/Xcursor*.3*
 
 %files static
 %defattr(644,root,root,755)
