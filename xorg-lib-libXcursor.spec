@@ -1,20 +1,22 @@
 Summary:	libXcursor - X Window System Cursor management library
 Summary(pl.UTF-8):	Biblioteka libXcursor do zarządzania kursorami w systemie X Window
 Name:		xorg-lib-libXcursor
-Version:	1.1.15
+Version:	1.2.0
 Release:	1
 License:	MIT
 Group:		X11/Libraries
 Source0:	https://xorg.freedesktop.org/releases/individual/lib/libXcursor-%{version}.tar.bz2
-# Source0-md5:	58fe3514e1e7135cf364101e714d1a14
+# Source0-md5:	9b9be0e289130fb820aedf67705fc549
 URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	sed >= 4.0
+BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xorg-lib-libXfixes-devel
 BuildRequires:	xorg-lib-libXrender-devel >= 0.8.2
+BuildRequires:	xorg-proto-fixesproto-devel
 BuildRequires:	xorg-util-util-macros >= 1.8
 Requires:	xorg-lib-libXrender >= 0.8.2
 Obsoletes:	XFree86-xcursor
@@ -33,6 +35,7 @@ Summary:	Header files for libXcursor library
 Summary(pl.UTF-8):	Pliki nagłówkowe do biblioteki libXcursor
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	xorg-lib-libX11-devel
 Requires:	xorg-lib-libXfixes-devel
 Requires:	xorg-lib-libXrender-devel >= 0.8.2
 Obsoletes:	XFree86-xcursor-devel
@@ -99,7 +102,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS COPYING ChangeLog README
+%doc AUTHORS COPYING ChangeLog README.md
 %attr(755,root,root) %{_libdir}/libXcursor.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libXcursor.so.1
 
