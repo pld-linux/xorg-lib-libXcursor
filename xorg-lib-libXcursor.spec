@@ -1,27 +1,29 @@
 Summary:	libXcursor - X Window System Cursor management library
 Summary(pl.UTF-8):	Biblioteka libXcursor do zarządzania kursorami w systemie X Window
 Name:		xorg-lib-libXcursor
-Version:	1.2.0
+Version:	1.2.1
 Release:	1
 License:	MIT
 Group:		X11/Libraries
-Source0:	https://xorg.freedesktop.org/releases/individual/lib/libXcursor-%{version}.tar.bz2
-# Source0-md5:	9b9be0e289130fb820aedf67705fc549
+Source0:	https://xorg.freedesktop.org/releases/individual/lib/libXcursor-%{version}.tar.xz
+# Source0-md5:	4cdd1886fe5cce6f68554296edb46db8
 URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	sed >= 4.0
+BuildRequires:	tar >= 1:1.22
 BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xorg-lib-libXfixes-devel
 BuildRequires:	xorg-lib-libXrender-devel >= 0.8.2
 BuildRequires:	xorg-proto-fixesproto-devel
 BuildRequires:	xorg-util-util-macros >= 1.8
+BuildRequires:	xz
 Requires:	xorg-lib-libXrender >= 0.8.2
-Obsoletes:	XFree86-xcursor
-Obsoletes:	libXcursor
-Obsoletes:	xcursor
+Obsoletes:	XFree86-xcursor < 4.4
+Obsoletes:	libXcursor < 1.2
+Obsoletes:	xcursor < 1.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -38,9 +40,9 @@ Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-lib-libX11-devel
 Requires:	xorg-lib-libXfixes-devel
 Requires:	xorg-lib-libXrender-devel >= 0.8.2
-Obsoletes:	XFree86-xcursor-devel
-Obsoletes:	libXcursor-devel
-Obsoletes:	xcursor-devel
+Obsoletes:	XFree86-xcursor-devel < 4.4
+Obsoletes:	libXcursor-devel < 1.2
+Obsoletes:	xcursor-devel < 1.1
 
 %description devel
 libXcursor - X Window System Cursor management library.
@@ -59,9 +61,9 @@ Summary:	Static libXcursor library
 Summary(pl.UTF-8):	Biblioteka statyczna libXcursor
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
-Obsoletes:	XFree86-xcursor-static
-Obsoletes:	libXcursor-static
-Obsoletes:	xcursor-static
+Obsoletes:	XFree86-xcursor-static < 4.4
+Obsoletes:	libXcursor-static < 1.2
+Obsoletes:	xcursor-static < 1.1
 
 %description static
 libXcursor - X Window System Cursor management library.
